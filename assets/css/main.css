@@ -1,0 +1,172 @@
+/* ===============================
+GLOBAL RESET
+================================ */
+
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+line-height: 1.6;
+color: #1b1b1b;
+}
+
+/* ===============================
+NAVIGATION
+================================ */
+
+#header {
+background: #1b1b1b;
+padding: 0.9em 0;
+}
+
+#nav ul {
+list-style: none;
+display: flex;
+justify-content: center;
+gap: 2em;
+margin: 0;
+padding: 0;
+}
+
+#nav a {
+color: #ffffff;
+text-decoration: none;
+font-weight: 500;
+}
+
+#nav a:hover {
+text-decoration: underline;
+}
+
+/* ===============================
+HERO / BANNER — FORCE RESET
+================================ */
+
+#banner {
+background: #1F6F5C !important;
+text-align: center !important;
+
+padding: 2em 2em 2.2em !important; /* SHORT HEIGHT */
+min-height: unset !important;
+height: auto !important;
+}
+
+#banner::before,
+#banner::after {
+display: none !important;
+content: none !important;
+}
+
+/* Kill hidden inner spacing from templates */
+.banner-inner {
+max-width: 1000px;
+margin: 0 auto !important;
+padding: 0 !important;
+}
+
+/* ===============================
+HERO LOGO — BIG & WIDE
+================================ */
+
+.hero-logo {
+display: block;
+margin: 0 auto 0.6em auto !important; /* VERY CLOSE TO TEXT */
+
+width: 100%;
+max-width: 560px; /* BIG LOGO */
+
+height: auto;
+object-fit: contain;
+}
+
+/* Mobile control */
+@media (max-width: 768px) {
+.hero-logo {
+max-width: 360px;
+}
+}
+
+/* ===============================
+HERO TEXT — TIGHT SPACING
+================================ */
+
+#banner h2 {
+color: #ffffff;
+font-size: 2.1em;
+margin: 0 0 0.4em 0 !important;
+}
+
+#banner p {
+color: #EAF5F2;
+font-size: 1.05em;
+margin: 0 !important;
+max-width: 820px;
+margin-left: auto !important;
+margin-right: auto !important;
+}
+
+/* ===============================
+SECTIONS
+================================ */
+
+.section {
+padding: 4em 2em;
+text-align: center;
+}
+
+.section.light {
+background: #ffffff;
+}
+
+.section.grey {
+background: #f3f3f3;
+}
+
+.section.green {
+background: #1F6F5C;
+color: #ffffff;
+}
+
+/* ===============================
+GRIDS
+================================ */
+
+.grid {
+display: grid;
+gap: 2em;
+max-width: 1100px;
+margin: 0 auto;
+}
+
+.grid.three {
+grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* ===============================
+LISTS
+================================ */
+
+section ul {
+max-width: 720px;
+margin: 0 auto;
+text-align: left;
+}
+
+section ul li {
+margin-bottom: 1em;
+}
+
+/* ===============================
+FOOTER
+================================ */
+
+footer {
+background: #1b1b1b;
+color: #ffffff;
+text-align: center;
+padding: 1.5em;
+font-size: 0.9em;
+}
